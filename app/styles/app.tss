@@ -24,3 +24,57 @@ overrode the settings with other TSS, XML, or JS settings:
 }
 
 */
+// Windows
+".window" : {
+	width: '100%',
+	height: '100%',
+	backgroundColor: '#F1F1F1'
+},
+
+// Layouts
+".layoutH": {
+	layout: "horizontal"
+},
+".layoutV": {
+	layout: "vertical"
+},
+
+// Background Color Classes
+".bgPink": {
+	backgroundColor: "#f5c4c7"
+},
+".bgOrange": {
+	backgroundColor: "#fcaf70"
+},
+".bgBlue": {
+	backgroundColor: "#b4efdf"
+},
+".bgBrown": {
+	backgroundColor: "#d6b792"
+},
+".bgPurple": {
+	backgroundColor: "#a08aa0"
+},
+".bgGreen": {
+	backgroundColor: "#d8d278"
+},
+
+// Text color classes
+".colorPink": {
+	color: "#f5c4c7"
+},
+".colorOrange": {
+	color: "#fcaf70"
+},
+".colorBlue": {
+	color: "#b4efdf"
+},
+".colorBrown": {
+	color: "#d6b792"
+},
+".colorPurple": {
+	color: "#a08aa0"
+},
+".colorGreen": {
+	color: "#d8d278"
+},
