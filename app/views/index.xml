@@ -1,5 +1,47 @@
 <Alloy>
+	
 	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
+				
+		<View id="categoryList">
+			
+			<View class="category" onClick="openCategory" model="1">
+				<Label class="categoryName thankYou colorOrange" text="Thank You"></Label>
+				<View class="categoryRibbon bgOrange"></View>
+			</View>
+			
+			
+			<View class="category" onClick="openCategory" model="2">
+				<Label class="categoryName iLoveYou colorPink" text="I Love You"></Label>
+				<View class="categoryRibbon bgPink"></View>
+			</View>
+			
+			
+			<View class="category" onClick="openCategory" model="3">
+				<Label class="categoryName congrats colorBlue" text="Congratulations"></Label>
+				<View class="categoryRibbon bgBlue"></View>
+			</View>
+			
+			
+			<View class="category" onClick="openCategory" model="4">
+				<Label class="categoryName goodBye colorPurple" text="Good Bye"></Label>
+				<View class="categoryRibbon bgPurple"></View>
+			</View>
+			
+			
+			<View class="category" onClick="openCategory" model="5">
+				<Label class="categoryName sorry colorBrown" text="I Am Sorry"></Label>
+				<View class="categoryRibbon bgBrown"></View>
+			</View>
+			
+			
+			<View class="category" onClick="openCategory" model="6">
+				<Label class="categoryName welcomeBack colorGreen" text="Welcome Back"></Label>
+				<View class="categoryRibbon bgGreen"></View>
+			</View>
+			
+			
+		</View>
+	
 	</Window>
+	
 </Alloy>
