@@ -1,0 +1,56 @@
+".parallax": {
+	top: 0,
+	height: "10dp",
+	width: Titanium.UI.FILL,
+	backgroundColor: "transparent",
+},
+".scrollViewPadding": {
+	top: 0,
+	left: 0,
+	width: "100%",
+	backgroundColor: "red",
+	height: "20dp",
+},
+"#recipeList":{
+	width: "80%",
+	bacgroundColor: "transparent",
+	layout: "horizontal",
+	contentWidth: Titanium.UI.FILL,
+},
+".recipeWrapper": {
+	width: "50%",
+	height: Titanium.UI.SIZE,
+	top: "2dp",
+	left: 0,
+}
+".recipe": {
+	width: "90%",
+	layout: "vertical",
+	height: Titanium.UI.SIZE,
+	backgroundColor: "white",
+},
+".recipeThumb": {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+},
+".recipeTitle": {
+	width: Titanium.UI.SIZE,
+	textAlign: "left",
+	color: "#333",
+	top: 0,
+	left: "5dp",
+	viewShadowColor: "#000",
+	viewShadowOffset: {x: 5, y: 5},
+	font: {
+		fontSize: "10pd",
+		fontFamily: "LobsterTwo",
+	}
+},
+".recipeInfo": {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	top: 0,
+	right: "5dp",
+}
+
+
