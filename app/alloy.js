@@ -30,7 +30,7 @@ Alloy.Globals.colors = {
 	Background 		: "#f1f1f1",
 	
 	// Category colors
-	loveYou 		: "#f5c4c7",
+	iLoveYou 		: "#f5c4c7",
 	thankYou 		: "#fcaf70",
 	congrats 		: "#b4efdf",
 	sorry	 		: "#d6b792",

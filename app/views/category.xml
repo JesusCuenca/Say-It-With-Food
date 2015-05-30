@@ -1,68 +1,32 @@
 <Alloy>
 
-	<Window>
+	<Collection src="Category" id="categoryCollection" instance="true" />
+	<Collection src="Recipe" id="recipeCollection" instance="true" />
+
+	<Window id="categoryWindow">
 		
+		<View id="parallax"></View>
 		
-		<View class="parallax"></View>
-		
-		<ScrollView id="recipeList">
+		<ScrollView id="recipeScrollView">
 			
-			<View class="scrollViewPadding"></View>
 			
-			<View class="recipeWrapper">
-				<View class="recipe">
-					
-					<ImageView class="recipeThumb" image="/thumb.png"></ImageView>
-					<Label class="recipeTitle" text="Titulo de la noticia" />
-					<View class="recipeInfo layoutH">
-						<Label class="recipeTime" text="0h30"/>
-						<Label class="recipeDifficulty" text="3"/>
-						<Label class="recipeLikes" text="15"/>
+			
+			<View id="recipeList" dataCollection="$.categoryCollection" adataFilter="filterRecipes">
+				
+				<View class="recipeWrapper">
+					<View class="recipe">
+						
+						<ImageView class="recipeThumb" image="/thumb.png"></ImageView>
+						<Label class="recipeTitle" text="Titulo de la noticia" />
+						<View class="recipeInfo layoutH">
+							<Label class="recipeTime" text="0h30"/>
+							<Label class="recipeDifficulty" text="3"/>
+							<Label class="recipeLikes" text="15"/>
+						</View>
+						
 					</View>
-					
-				</View>
-			</View>
-			
-			<View class="recipeWrapper">
-				<View class="recipe">
-					
-					<ImageView class="recipeThumb" image="/thumb.png"></ImageView>
-					<Label class="recipeTitle" text="Titulo de la noticia" />
-					<View class="recipeInfo layoutH">
-						<Label class="recipeTime" text="0h30"/>
-						<Label class="recipeDifficulty" text="3"/>
-						<Label class="recipeLikes" text="15"/>
-					</View>
-					
-				</View>
-			</View>
-			
-			<View class="recipeWrapper">
-				<View class="recipe">
-					
-					<ImageView class="recipeThumb" image="/thumb.png"></ImageView>
-					<Label class="recipeTitle" text="Titulo de la noticia" />
-					<View class="recipeInfo layoutH">
-						<Label class="recipeTime" text="0h30"/>
-						<Label class="recipeDifficulty" text="3"/>
-						<Label class="recipeLikes" text="15"/>
-					</View>
-					
-				</View>
-			</View>
-			
-			<View class="recipeWrapper">
-				<View class="recipe">
-					
-					<ImageView class="recipeThumb" image="/thumb.png"></ImageView>
-					<Label class="recipeTitle" text="Titulo de la noticia" />
-					<View class="recipeInfo layoutH">
-						<Label class="recipeTime" text="0h30"/>
-						<Label class="recipeDifficulty" text="3"/>
-						<Label class="recipeLikes" text="15"/>
-					</View>
-					
-				</View>
+				</View>			
+
 			</View>
 			
 			<View class="scrollViewPadding"></View>			
