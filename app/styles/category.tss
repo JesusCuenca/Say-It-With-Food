@@ -8,7 +8,7 @@
 	top: 0,
 	left: 0,
 	width: "100%",
-	backgroundColor: "red",
+	backgroundColor: "transparent",
 	height: "30dp",
 },
 "#recipeScrollView":{
@@ -34,29 +34,66 @@
 	layout: "vertical",
 	height: Titanium.UI.SIZE,
 	backgroundColor: "white",
+	viewShadowColor: "#000",
+	viewShadowRadius: "5px",
+	viewShadowOffset: { x: 2, y: 2 },
 },
 ".recipeThumb": {
 	width: Titanium.UI.FILL,
 	height: Titanium.UI.SIZE,
+	touchEnabled: false,
 },
 ".recipeTitle": {
 	width: Titanium.UI.SIZE,
 	textAlign: "left",
 	color: "#333",
-	top: 0,
-	left: "5dp",
+	top: "10dp",
+	left: "10dp",
 	viewShadowColor: "#000",
 	viewShadowOffset: {x: 5, y: 5},
+	touchEnabled: false,
 	font: {
-		fontSize: "10pd",
+		fontSize: "10pt",
 		fontFamily: "LobsterTwo",
 	}
 },
-".recipeInfo": {
+
+// RecipeInfoWrapper is a workaround to achieve
+// an horizontal layout from right to left.
+".recipeInfoWrapper": {
 	width: Titanium.UI.FILL,
 	height: Titanium.UI.SIZE,
-	top: 0,
-	right: "5dp",
-}
+	top: "8dp",
+	left: "10dp",
+	right: "10dp",
+	touchEnabled: false,
+},
+".recipeInfo": {
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	right: 0,
+	touchEnabled: false,
+},
 
+".recipeInfoLabel": {
+	right: "3dp",
+	color: "#777",
+	width: Titanium.UI.SIZE,
+	touchEnabled: false,
+	font: {
+		fontSize: "7pt",
+		fontFamily: "NoticiaText-Regular"
+	}
+},
+".recipeMarginBottom": {
+	height: "10dp",
+	width: Titanium.UI.FILL,
+	top: 0,
+	left: 0,
+	touchEnabled: false,
+},
+".recipeInfoIcon": {
+	touchEnabled: false,
+	
+}
 

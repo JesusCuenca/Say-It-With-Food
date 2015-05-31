@@ -14,15 +14,20 @@
 			<View id="recipeList" dataCollection="$.categoryCollection" adataFilter="filterRecipes">
 				
 				<View class="recipeWrapper">
-					<View class="recipe">
+					<View class="recipe" onClick="openRecipe" model="{id}">
 						
 						<ImageView class="recipeThumb" image="/thumb.png"></ImageView>
 						<Label class="recipeTitle" text="Titulo de la noticia" />
-						<View class="recipeInfo layoutH">
-							<Label class="recipeTime" text="0h30"/>
-							<Label class="recipeDifficulty" text="3"/>
-							<Label class="recipeLikes" text="15"/>
+						
+						<View class="recipeInfoWrapper">							
+							<View class="recipeInfo layoutH">
+								<Label class="recipeTime recipeInfoLabel" text="0h30"/>
+								<Label class="recipeDifficulty recipeInfoLabel" text="3"/>
+								<Label class="recipeLikes recipeInfoLabel" text="15"/>
+							</View>
 						</View>
+						
+						<View class="recipeMarginBottom" />
 						
 					</View>
 				</View>			

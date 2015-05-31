@@ -28,15 +28,29 @@ function configureABX (_event) {
 }
 $.categoryWindow.addListener('open', configureABX);
 
-
+/**
+ * Adding a parallax effect to the view.
+ * When the recipe list scrolls, move the parallax
+ * view as well, but with less velocity. 
+ */
 function doParallaxEffect (_event) {
 	
-	$.parallax.top = -( _event.y * 0.25 ); 
+	$.parallax.top = -( _event.y * 0.2 ); 
 }
 $.recipeScrollView.addListener('scroll', doParallaxEffect);
 
-
+/**
+ * Filter the recipe list so only the recipes of the
+ * category clicked are shown.
+ */
 function filterRecipes () {
 	
+}
+
+/**
+ * When a recipe is clicked, open the recipe details view. 
+ */
+function openRecipe (_event) {
+	alert(_event.source.model);
 }
 
