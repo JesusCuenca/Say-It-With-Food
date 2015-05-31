@@ -6,7 +6,8 @@
 		fontSize: 22,
 		fontFamily: 'LobsterTwo'
 	},
-	textAlign: 'center'
+	textAlign: 'center',
+	touchEnabled: false
 },
 
 "#categoryList": {
@@ -29,4 +30,5 @@
 	bottom: 0,
 	width: Titanium.UI.FILL,
 	height: "10px",
+	touchEnabled: false,
 }
